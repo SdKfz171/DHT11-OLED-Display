@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"oled_display\stm32f1xx_hal_gpio_ex.o"
+"oled_display\stm32f1xx_hal_tim.o"
+"oled_display\stm32f1xx_hal_flash_ex.o"
+"oled_display\stm32f1xx_hal.o"
+"oled_display\stm32f1xx_hal_rcc_ex.o"
+"oled_display\stm32f1xx_hal_rcc.o"
+"oled_display\stm32f1xx_hal_dma.o"
+"oled_display\stm32f1xx_hal_gpio.o"
+"oled_display\stm32f1xx_hal_flash.o"
+"oled_display\stm32f1xx_hal_i2c.o"
+"oled_display\stm32f1xx_hal_tim_ex.o"
+"oled_display\stm32f1xx_hal_uart.o"
+"oled_display\stm32f1xx_hal_cortex.o"
+"oled_display\stm32f1xx_hal_pwr.o"
+"oled_display\system_stm32f1xx.o"
+"oled_display\stm32f1xx_hal_msp.o"
+"oled_display\main.o"
+"oled_display\stm32f1xx_it.o"
+"oled_display\fonts.o"
+"oled_display\ssd1306.o"
+"oled_display\dht11.o"
+"oled_display\dwt_stm32_delay.o"
+"oled_display\startup_stm32f103xe.o"
+--library_type=microlib --strict --scatter "OLED_DISPLAY\OLED_DISPLAY.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "OLED_DISPLAY.map" -o OLED_DISPLAY\OLED_DISPLAY.axf
